@@ -1,0 +1,12 @@
+// Función para calcular a^n usando un bucle while
+// Toma como entrada un número real 'a' y un entero 'n'
+// y devuelve a elevado a la potencia n.
+double exp(double a, int n) {
+    double res = 1;  // Inicializa el resultado a 1
+    int i = 0;       // Inicializa el contador i a 0
+    while (i < n) {  // Mientras i sea menor que n
+        res = res * a;  // Multiplica el resultado actual por a
+        i = i + 1;      // Incrementa el contador i
+    }
+    return res;  // Devuelve el resultado final
+}
