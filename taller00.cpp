@@ -22,6 +22,7 @@ struct venta {
 
 struct Cliente {
     string nombre;
+    string nombreproducto;
     string direccion;
     string telefono;
 };
@@ -35,12 +36,16 @@ int generarNumeroAleatorio() {
 void capturarDatosCliente(Cliente *cliente) {
     cout << "Nombre del cliente: ";
     getline(cin, cliente->nombre);
+  
 
     cout << "Dirección del cliente: ";
     getline(cin, cliente->direccion);
 
     cout << "Teléfono del cliente: ";
     getline(cin, cliente->telefono);
+    cout << "Nombre del producto: ";
+    getline(cin, cliente->nombreproducto);
+    
 }
 
 
@@ -53,6 +58,7 @@ void imprimirFactura(Cliente *cliente, venta *ventaActual) {
         archivoFactura << "Nombre del cliente: " << cliente->nombre << endl;
         archivoFactura << "Dirección del cliente: " << cliente->direccion << endl;
         archivoFactura << "Teléfono del cliente: " << cliente->telefono << endl;
+        archivoFactura << "Nombre del producto: " << cliente->nombreproducto << endl;
         archivoFactura << "Cantidad de productos: " << ventaActual->cantidad << endl;
         archivoFactura << "Precio por producto: $" << ventaActual->precio << endl;
         archivoFactura << "Valor a pagar: $" << ventaActual->cantidad * ventaActual->precio << endl;
