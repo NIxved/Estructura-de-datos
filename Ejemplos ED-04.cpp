@@ -314,3 +314,102 @@ int main() {
 
     return 0;  
 }
+
+14. Codigo //Ordenamiento burbuja normal
+    int vals[N]; 
+
+// Bucle externo que controla el número de pasadas a través del arreglo
+for (int i = 0; i < N; i++) {
+    // Bucle interno que realiza las comparaciones y los intercambios
+    for (int j = 0; j < N - 1; j++) {
+        // Si el elemento actual es mayor que el siguiente, se realiza un intercambio
+        if (vals[j] > vals[j + 1]) {
+            int swap = vals[j];     // Almacena el valor del elemento actual en una variable temporal
+            vals[j] = vals[j + 1];  // Asigna el valor del siguiente elemento al elemento actual
+            vals[j + 1] = swap;     // Asigna el valor almacenado en la variable temporal al siguiente elemento
+        }
+    }
+}
+15. codigo//ordenamiento burbuja con vectores
+
+vector<int> vals;
+
+// Bucle externo que controla el número de pasadas a través del vector
+for (int i = 0; i < vals.size(); i++) {
+    // Inicializa dos iteradores para recorrer el vector
+    vector<int>::iterator j = vals.begin(); // Iterador que apunta al inicio del vector
+    vector<int>::iterator k = j;            // Iterador k inicializado en el mismo punto que j
+
+    // Bucle interno que realiza las comparaciones e intercambios utilizando iteradores
+    for (k++; k != vals.end(); j++, k++) {
+        // Si el elemento apuntado por j es mayor que el siguiente elemento apuntado por k
+        if (*j > *k) {
+            int swap = *j;  // Almacena el valor apuntado por j en una variable temporal
+            *j = *k;        // Asigna el valor apuntado por k a la posición de j
+            *k = swap;      // Asigna el valor almacenado en la variable temporal a la posición de k
+        }
+    }
+}
+16. Codigo//ordenamiento burbuja con Deque
+
+    deque<int> vals; 
+
+// Bucle externo que controla el número de pasadas a través del deque
+for (int i = 0; i < vals.size(); i++) {
+    // Inicializa dos iteradores para recorrer el deque
+    deque<int>::iterator j = vals.begin(); // Iterador que apunta al inicio del deque
+    deque<int>::iterator k = j;            // Iterador k inicializado en la misma posición que j
+
+    // Bucle interno que realiza las comparaciones e intercambios utilizando iteradores
+    for (k++; k != vals.end(); j++, k++) {
+        // Si el elemento apuntado por j es mayor que el siguiente elemento apuntado por k
+        if (*j > *k) {
+            int swap = *j;  // Almacena el valor apuntado por j en una variable temporal
+            *j = *k;        // Asigna el valor apuntado por k a la posición de j
+            *k = swap;      // Asigna el valor almacenado en la variable temporal a la posición de k
+        }
+    }
+}
+17. Codigo// Ordenamineot burbuja con Lista
+  
+    // Bucle externo: recorre toda la lista tantas veces como su tamaño
+    for(int i = 0; i < vals.size(); i++) {
+        // Se inicializan dos iteradores, j y k, que apuntan al primer elemento de la lista
+        list<int>::iterator j = vals.begin();
+        list<int>::iterator k = j;
+
+        // Bucle interno: recorre la lista desde el segundo elemento hasta el final
+        for(k++; k != vals.end(); j++, k++) {
+            // Si el valor apuntado por j es mayor que el valor apuntado por k, se intercambian
+            if(*j > *k) {
+                int swap = *j;  // Se guarda temporalmente el valor de j
+                *j = *k;        // Se asigna el valor de k a j
+                *k = swap;      // Se asigna el valor guardado en swap a k
+            }
+        }
+    }
+18. Codigo
+    using namespace std;
+
+typedef list<T> TsubLista; 
+
+typedef list<TsubLista> TLista; 
+
+TLista listaMulti; 
+
+// Se crea un iterador lIt que apunta al inicio de la lista listaMulti
+TLista::iterator lIt = listaMulti.begin(); 
+
+// Bucle externo: recorre todos los elementos de listaMulti
+for(; lIt != listaMulti.end(); lIt++) { 
+    // Se crea un iterador sublIt que apunta al inicio de la sublista actual
+    TsubLista::iterator sublIt = lIt->begin(); 
+
+    // Bucle interno: recorre todos los elementos de la sublista actual
+    for(; sublIt != lIt->end(); sublIt++) { 
+        // Imprime el valor apuntado por sublIt
+        cout << *sublIt << endl; 
+    }
+}
+
+   
