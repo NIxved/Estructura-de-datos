@@ -1,0 +1,11 @@
+10
+Imagine,John Lennon,Rock,Imagine,1971
+Billie Jean|Michael Jackson|Pop|Thriller|1982
+Bohemian Rhapsody|Queen|Rock|A Night at the Opera|1975
+Hotel California|Eagles|Rock|Hotel California|1976
+Like a Rolling Stone|Bob Dylan|Folk|Highway 61 Revisited|1965
+Smells Like Teen Spirit|Nirvana|Grunge|Nevermind|1991
+Sweet Child O' Mine|Guns N' Roses|Rock|Appetite Destruction|1987
+One|Metallica|Metal|...And Justice All|1988
+Yesterday|The Beatles|Rock|Help!|1965
+Purple Haze|Jimi Hendrix|Rock|Are You Experienced|1967
