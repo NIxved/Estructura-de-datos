@@ -15,7 +15,6 @@ Tema: Laboratorio TAD
 #include <string>
 
 
-// TAD Vehículo
 class Vehiculo {
 private:
     std::string placa;
@@ -33,7 +32,7 @@ public:
     }
 };
 
-// TAD Caseta
+
 class Caseta {
 private:
     std::queue<Vehiculo> cola;
@@ -84,7 +83,7 @@ public:
 };
 
 
-// TAD PuntoDeCobro
+
 class PuntoDeCobro {
 private:
     std::vector<Caseta> casetas;
